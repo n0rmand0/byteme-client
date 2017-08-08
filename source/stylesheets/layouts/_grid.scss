@@ -1,0 +1,25 @@
+// GRID LAYOUT - Canned layout styles that can be used anywhere (modules prefixed with 'l')
+////////////////////////////////////////////////////////////////
+
+.container {
+  position: relative;
+  display: grid;
+  max-width: $max-width;
+  margin: auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: $base-spacing;
+}
+
+// Full width
+.l-full {
+  grid-column: span 12;
+}
+
+// 1/2
+.l-split {
+  grid-column: span 12;
+
+  @include media($medium) {
+    grid-column: span 6;
+  }
+}

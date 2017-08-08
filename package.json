@@ -1,0 +1,51 @@
+{
+  "name": "ByteMe",
+  "productName": "App",
+  "version": ".1",
+  "description": "Sonos Controller",
+  "license": "MIT",
+  "repository": "user/repo",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "scripts": {
+    "test": "xo",
+    "start": "electron .",
+    "build": "electron-packager . --out=dist --asar --overwrite --all",
+    "dev": "webpack --watch --progress --color & electron . ",
+    "webpack": "webpack --watch --progress --color"
+  },
+  "dependencies": {
+    "autoprefixer": "^7.1.2",
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.4",
+    "electron-debug": "^1.0.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "menubar": "^5.2.3",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.6",
+    "remote": "^0.2.6",
+    "sass-loader": "^6.0.6",
+    "source-map-support": "^0.4.15",
+    "style-loader": "^0.18.2",
+    "webpack-target-electron-renderer": "^0.4.0"
+  },
+  "devDependencies": {
+    "devtron": "^1.1.0",
+    "electron": "^1.6.6",
+    "electron-packager": "^8.0.0",
+    "file": "^0.2.2",
+    "system": "^2.0.1",
+    "webpack": "^3.4.1",
+    "xo": "^0.18.0"
+  },
+  "xo": {
+    "envs": [
+      "node",
+      "browser"
+    ]
+  },
+  "main": "index.js"
+}

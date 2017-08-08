@@ -1,0 +1,32 @@
+// GRID SETTINGS (mobile first)
+////////////////////////////////////////////////////////////////
+// You may use the 'media($query)' mixin for any media query preset.
+// example css:
+// @include media($large){ display: none; }
+// This query setup also supports the neat grid framework: https://neat.bourbon.io/, but it is not required.
+
+@mixin media($query){
+  @media #{ map-get($query, media) } {
+    @content;
+  }
+}
+
+$extra-large: (
+  media: '(min-width: $max-width)'
+);
+
+$large: (
+  media: '(min-width: 900px)'
+);
+
+$medium: (
+  media: '(min-width: 670px)'
+);
+
+$small: (
+  media: '(min-width: 450px)'
+);
+
+$nav-break: (
+  media: '(min-width: 900px)'
+);
