@@ -11,9 +11,8 @@
   },
   "scripts": {
     "test": "xo",
-    "start": "electron .",
+    "start": "webpack & electron .",
     "build": "electron-packager . --out=dist --asar --overwrite --all",
-    "dev": "webpack --watch --progress --color & electron . ",
     "webpack": "webpack --watch --progress --color"
   },
   "dependencies": {
