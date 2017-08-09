@@ -47,22 +47,22 @@ var renderController = function(){
 // Control Functions
 var play = function(){
   request(server+'play');
-  render();
+  renderController();
 }
 
 var pause = function(){
   request(server+'pause');
-  render();
+  renderController();
 }
 
 var next = function(){
   request(server+'next');
-  render();
+  renderController();
 }
 
 var previous = function(){
   request(server+'previous');
-  render();
+  renderController();
 }
 
 // Controller Buttons
