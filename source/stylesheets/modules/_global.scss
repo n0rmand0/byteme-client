@@ -5,3 +5,60 @@
 body {
   color: #000;
 }
+
+.controller {
+  display: flex;
+  width: 100%;
+  // padding-top: $base-spacing;
+  border-bottom: $base-border;
+  margin-bottom: $base-spacing;
+}
+
+.controller__art {
+  width: 80px;
+  height: 80px;
+  margin-right: $small-spacing;
+
+}
+.controller__info {
+  // height: 100px;
+  margin-top: $small-spacing;
+  flex-grow: 1;
+
+  h1,
+  h2,
+  h3 {
+    font-size: .8em;
+    font-weight: 400;
+    text-transform: none;
+    margin-bottom: $small-spacing;
+    padding: 0;
+  }
+
+}
+
+.controller__buttons {
+  display: flex;
+  width: 130px;
+  height: 40px;
+  align-items: center;
+  margin-top: $small-spacing;
+  padding-right: $base-spacing;
+  justify-content: space-between;
+
+  button {
+    background: none;
+    border: none;
+  }
+
+}
+
+.controller__previous,
+.controller__next {
+  width: 30px;
+}
+
+.controller__pause,
+.controller__play {
+  width: 36px;
+}

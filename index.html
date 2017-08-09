@@ -4,14 +4,26 @@
 		<meta charset="utf-8">
 		<title>Electron boilerplate</title>
 		<link rel="stylesheet" href="all.css">
+		<script type="text/javascript" src="webview.js"></script>
+
 	</head>
 	<body>
-		<div class="container">
-			<header>
-				<h1>BM</h1>
-			</header>
-			<section class="main"></section>
-			<footer></footer>
-		</div>
+		<section class="controller">
+			<img class="controller__art" src="">
+			<div class="controller__info">
+				<h2 class="controller__artist"></h2>
+				<h1 class="controller__title"></h3>
+			</div>
+			<div class="controller__buttons">
+				<button class="controller__previous" title="previous"><img src="images/previous@2x.png" alt="previous"></button>
+				<button class="controller__pause" title"pause"><img src="images/pause@2x.png" alt="pause"></button>
+				<button class="controller__play" title="Play"><img src="images/play@2x.png" alt="play"></button>
+				<button class="controller__next" title="next"><img src="images/next@2x.png" alt="next"></button>
+			</div>
+		</section>
+		<section class="soundboard">
+		</section>
+		<footer>
+		</footer>
 	</body>
 </html>
