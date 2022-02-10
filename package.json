@@ -23,7 +23,7 @@
     "extract-text-webpack-plugin": "^3.0.0",
     "jquery": "^3.2.1",
     "menubar": "^5.2.3",
-    "node-sass": "^4.5.3",
+    "node-sass": "^7.0.0",
     "postcss-loader": "^2.0.6",
     "remote": "^0.2.6",
     "request": "^2.81.0",
